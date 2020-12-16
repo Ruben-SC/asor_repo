@@ -1,0 +1,9 @@
+-a: no ignora las entradas que empiezan con .
+-l: usa formato de lista extendida
+-d: lista los directorios, no sus contenidos
+-h: imprime el tamaño entendible para los humanos
+-i: imprime el i-nodo de cada fichero
+-R: lista los subdirectorios resursivamente
+-1: lista el fichero línea por línea
+-F: añade indicador a las entradas
+--color: [=WHEN] da color a la salida, WHEN puede ser 'always', 'auto' o 'never'

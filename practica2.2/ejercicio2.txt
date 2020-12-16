@@ -1,0 +1,2 @@
+ls -ld $HOME
+drwx------. 19 cursoredes cursoredes 4096 Dec 15 12:01 /home/cursoredes
