@@ -1,0 +1,9 @@
+*Formatos*
+-f		full-format listing
+-F		extra full format
+-l		long format
+
+ps -o pid,pgid,sess,state,cmd
+
+Comparten el inicio de sesión.
+Cuando se crea un nuevo proceso en el grupo de procesos el identificador es el mismo del proceso.
