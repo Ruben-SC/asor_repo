@@ -1,0 +1,7 @@
+mkfifo tuberia
+ls -l ./tuberia
+stat ./tuberia
+cat ./tuberia &
+echo "Hola" > tuberia
+tee ./tuberia &
+echo "Hola2" > tuberia
