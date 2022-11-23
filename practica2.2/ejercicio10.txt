@@ -1,0 +1,36 @@
+mkdir fichero
+touch ej10
+
+### Enlaces simbólicos ###
+ln -s ej10 simF
+ln -s fichero simD
+
+*ls -l:*
+total 0
+-rw-rw-r-- 1 cursoredes cursoredes 0 Nov 21 09:57 ej10
+drwxrwxr-x 2 cursoredes cursoredes 6 Nov 21 09:57 fichero
+lrwxrwxrwx 1 cursoredes cursoredes 7 Nov 21 09:57 simD -> fichero
+lrwxrwxrwx 1 cursoredes cursoredes 4 Nov 21 09:57 simF -> ej10
+
+*ls -i:*
+3508915 ej10  
+17153625 fichero   
+3577006 simD   
+3577003 simF
+
+### Enlaces rígidos ###
+ln ej10 rigF
+ln fichero rigD -> ln: ‘fichero’: hard link not allowed for directory
+					no se permiten enlaces rígidos para los directorios
+
+*ls -li:*
+total 0
+ 3508915 -rw-rw-r-- 2 cursoredes cursoredes 0 Nov 21 09:57 ej10
+17153625 drwxrwxr-x 2 cursoredes cursoredes 6 Nov 21 09:57 fichero
+ 3508915 -rw-rw-r-- 2 cursoredes cursoredes 0 Nov 21 09:57 rigF
+ 3577006 lrwxrwxrwx 1 cursoredes cursoredes 7 Nov 21 09:57 simD -> fichero
+ 3577003 lrwxrwxrwx 1 cursoredes cursoredes 4 Nov 21 09:57 simF -> ej10
+ 
+¿Qué sucede cuando se borra uno de los enlaces rígidos? se reduce el contador de enlaces, no se pierde la información porque comparte el i-nodo
+¿Qué sucede si se borra uno de los enlaces simbólicos? se borra el enlace sin reducir el contador de enlaces por funcionar como un acceso directo
+¿Y si se borra el fichero original? se rompe el enlace simbólico pero el enlace rígido sigue teniendo acceso a la información del fichero

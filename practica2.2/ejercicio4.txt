@@ -1,0 +1,2 @@
+cd e4:
+bash: cd: e4: Permission denied

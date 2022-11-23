@@ -1,0 +1,7 @@
+máscara por defecto: 0002
+umask 0027
+
+touch ej6
+
+ls -l
+-rw-r----- 1 cursoredes cursoredes 0 Nov 21 09:34 ej6

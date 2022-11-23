@@ -1,0 +1,4 @@
+Directorio principal Home:
+drwx------. 19 cursoredes cursoredes 4096 Nov 21 09:06 .
+Documents:
+drwxr-xr-x 2 cursoredes cursoredes 6 Sep  9  2018 Documents
