@@ -1,0 +1,6 @@
+chrt -a -p 1786 (pid del proceso bash)
+pid 1785's current scheduling policy: SCHED_OTHER
+pid 1785's current scheduling priority: 0
+
+renice -n -10 -p 2724
+chrt -f -p 12 2724

@@ -1,0 +1,2 @@
+La prioridad del programa es 12.
+Si, se heredan los atributos de planificación.
